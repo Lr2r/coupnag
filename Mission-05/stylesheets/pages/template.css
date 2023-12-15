@@ -1,0 +1,275 @@
+ul {
+  list-style: none;
+}
+
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+.header {
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.header__inner {
+  
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.button--category {
+  display: flex;
+  width: 110px;
+  height: 116px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
+  border: 1px solid var(--color-blue-600);
+
+  
+}
+
+.button--category:focus {
+  border: 1px solid var(--color-red-500);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px var(--color-red-500);
+}
+
+
+
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+
+.navigation {
+   font-size: 12px;
+   line-height: 120%;
+   font-weight: 400;
+   width: 1020px;
+   height: 520px;
+   margin: 0 auto;
+
+}
+
+.navigation__inner {
+  position: relative;
+  width: 1020px;
+  margin: 0 auto;
+  
+}
+
+
+
+
+nav h3 {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  border: 0;
+}
+
+
+
+
+.navigation__list {
+  width: 180px;
+  height: 500px;
+  padding: 10px 5px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navigation__list li a {
+  width: 170px;
+  height: 30px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  
+}
+
+.navigation__list .iconfont {
+  margin-right: 4px;
+  color: var(--color-gray-900);
+}
+
+.navigation__list.depth-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation__list.depth-2,
+.navigation__list.depth-3 {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 180px;
+
+}
+
+.navigation__list.depth-2 li a,
+.navigation__list.depth-3 li a {
+  padding: 8px 0 8px 20px;
+}
+
+
+
+.navigation__list.is--active {
+  display: block;
+}
+
+
+
+.navigation__list.depth-1 > li:hover > a:after,
+.navigation__list.depth-2 > li:hover > a:after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    right: 10px;
+    background-image: url("/assets/icon/more-right-active.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
+.navigation__list > li:hover > a,
+.navigation__list > li:focus > a,
+.navigation__list > li:hover > a > .iconfont,
+.navigation__list > li:focus > a > .iconfont {
+  color: var(--color-blue-600);
+  font-weight: 700;
+}
+
+.footerlayer1 {
+  margin: 0 auto; 
+  background-color: var(--color-gray-200);
+  height: 40px;
+  
+  
+  
+  
+  
+}
+.layer1 {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;  
+  line-height: 35px; 
+  font-weight: 400;
+  
+  }
+
+  .guide {
+    margin-left: 3px;
+
+  }
+  
+  .boldfont {
+   font-weight: 500;
+  }
+
+  .footerlayer2 {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2px;
+    align-items: center;
+    color: var(--color-gray-900);
+    
+
+  }
+  .coupang{
+    width: 176px;
+    height: 40px; 
+    left: 30px;
+  }
+  .hosting {
+    width:260px ;
+    height: 143px;
+    margin-left: 60px;
+    line-height: 40%;
+    font-size: 12px;
+    position: relative;
+    top: 40px;
+    
+  }
+  .hosting .span .p{
+    font-size: 12px;
+  }
+
+  .cs {
+    font-size: 14px;
+    line-height: 60%;
+    margin-left: 5px;
+  }
+
+  .bankinfo {
+    line-height: 120%;
+    font-size: 12px;
+    margin-left: 60px;
+  }
+
+  .footerlayer3 {
+    margin: 0 auto;
+    height: 102px;
+    background-color: var(--color-gray-900);
+    padding-top: 8px;
+    position: relative;
+    display: flex; /* 추가: flex 컨테이너로 설정 */
+    justify-content: space-between; /* 추가: 자식 요소 간의 간격을 최대화하여 나란히 정렬 */
+    align-items: center; /* 추가: 세로 가운데 정렬 */
+    
+  }
+  .copyright {
+  
+    color: var(--color-white);
+    font-size: 11px;
+    text-align: left;
+    margin-left: 520px;
+    
+  }
+
+  .snslogo {
+   
+    display: flex;
+    padding: 0;
+    margin-right:460px;
+    width: 112px;
+    height: 34px;
+  }
+
+  .snslogo li {
+    margin-right: 10px;
+    width: 34px;
+    height: 34px;
+    
+  }
+
+  .snslogo .img {
+    width: 34px;
+    height: 34px;
+    padding-right: 10px;
+   
+  }
+  
