@@ -1,0 +1,434 @@
+
+/* 헤더 */
+header {
+    border-bottom: 1px solid var(--color-gray-100);
+    
+}
+ul {
+    list-style: none;
+}
+
+.logbox{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray-100);
+    
+}
+
+.menulist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    width: 1020px;
+    height: 20px;
+    padding-right: 50px;
+}
+
+.menu{
+    font-size: 12px;
+    font-family: Noto Sans;
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.logbox li:nth-child(4) {
+    order: -2;
+    margin-left: 1px;
+}
+
+.logbox li:last-child {
+    order: -1;
+    margin-right: 700px;
+}
+
+.header {
+    width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    
+}
+
+.logbox {
+    display: flex;
+    height: 34px;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-gray-100);
+}
+
+.menulist {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    height: 34px;
+    
+}
+
+.menu{
+    font-family: Noto Sans;
+    font-size: 13px;
+    font-weight: normal;
+    
+    
+}
+
+.logbox li:nth-child(4){
+    margin-left: -6px;
+}
+
+.header {
+    width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-row: 1fr;
+    grid-template-columns: 100px 900px;
+    
+   
+}
+
+.button--category {
+    height: 110px;
+    color: var(--color-bluee-600);
+    background-color: var(--color-blue-600);
+    background-image: url("/assets/icon/hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center 35px;
+    border: var(--color-blue-600);
+    position: relative;  
+    border: none;  
+    top: 1px;      
+
+    
+}
+.categorytext{
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    left: 20px;
+    top: 65px;
+    right: 20px;
+}
+
+
+.clearfix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10px 10px;
+    top:  2px;
+    right: 3px;
+    position: relative;
+    
+    
+}
+
+
+.logo > img{
+    position: relative;
+    top: 35px;
+    left: 40px;
+    width: 176px;
+    height: 40px;
+    
+}
+
+
+
+
+.search{
+    /* width: 516px;
+    height: 40px;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 22px;
+    border: 1px solid var(--color-blue-600); */
+    width: 516px;
+    height: 40px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 22px;
+    border: 1px solid var(--color-blue-600);
+    left: 40px;
+    top: 30px;
+
+  
+}
+#search_combo {
+    appearance: none;
+    border: none;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 38px;
+    padding: 12px 12px;
+    color: var(--color-blue-700);
+    border-right: 1px solid var(--color-gray-100);
+    background-color: transparent;
+    outline: none;
+    z-index: 1;
+
+}
+#search_combo::-ms-expand {
+    display: none;
+  }
+  #search-img {
+    position: absolute;
+    left: 94px;
+    width: 40px;
+    height: 40px;
+  }
+
+.searchinput {
+  position: absolute;
+  width: 300px;
+  height: 38px;
+  top: 0;
+  right: 79px;
+  padding: 13px 10px;
+  border: none;
+  color: var(--color-gray-600);
+  outline: none;
+    
+}
+
+.selectcategory{
+    
+   position: relative;
+   left: 0;
+   height: 40px;
+   bottom: 10px;
+   width: 135px;
+   border: 1px solid var(--color-blue-600);
+
+}
+
+
+.searchmic {
+    position: absolute;
+    width: 39px;
+    height: 38px;
+    border: none;   
+    background-color: var(--color-white);
+    top: 0;
+    right:0px;
+    
+}
+
+.searchbtn {
+   position: relative;
+   width: 39px;
+   height: 38px;
+   border: none;
+   background-color: var(--color-white);
+   top: 0;
+   left: 440px;
+   
+   
+}
+
+.click-button{
+    border: none;    
+    background-color: transparent;
+}
+/* 마이쿠팡 */
+
+.myCoupang {
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    left: 22px;
+    top: 35px;
+    width: 50px;
+}
+.myCoupang .img{
+   position: relative;
+   
+   width:30px ;
+   height: 58px;
+   font-size: 12px;
+}
+.myCoupangtext {
+    font-size: 12px;
+    width: 50px;
+    font-weight: 500;
+}
+
+.myCoupang ul{
+    display: none;
+}
+.myCoupang.is--active ul {
+    display: block;
+    width: 90px;
+    margin: 0;
+    margin-top: 4px;
+    padding: 24px 0;
+    border: 1px solid var(--color-gray-300);
+    background-color: var(--color-white);  
+  
+  
+  }
+
+  .myCoupang.is--active ul::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    top: 58px;
+    right: 41px;
+    border: 1px solid var(--color-gray-300);
+    border-width: 1px 1px 0 0;
+    background-color: var(--color-white);
+    transform: rotate(-45deg);
+  }
+
+  .myCoupang.is--active li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+/* 장바구니 */
+
+.cart {
+    
+    position: relative;
+    left: 825px;
+    top: 25px;
+    
+    font-size: 12px;
+    height: 60px;
+    width: 60px; 
+}
+
+.cartmsg {
+    display: none; 
+    text-align: center;
+}
+
+.cart.cart--empty .cartmsg {
+  display: block;
+  position: absolute;
+  width: 281px;
+  height: 100px;
+  margin: 3px;
+  padding: 36px 0;
+  right: 0;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+
+}
+
+.cartmsg p {
+    position: relative;
+    text-align: center;
+    line-height: 2px;
+}
+
+.cart.cart--empty .cartmsg::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    top: -5px;
+    right: 25px;
+    border: 1px solid var(--color-gray-300);
+    border-width: 1px 1px 0 0;
+    background-color: var(--color-white);
+    transform: rotate(-45deg);
+    
+   
+    
+}
+
+#count {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: var(-color-white);
+    font-weight: 400;
+    line-height: 120%;
+    margin: 1px 0px 21px 22px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-blue-600);
+
+}
+
+
+/* 내비 */
+.navi{
+    display: grid;
+    grid-column: 1 / 4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    position: relative;
+    top: 39px;
+    left: 14px;
+}
+
+.navi ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
+    top: 11px;
+    left: 5px;
+}
+.navi li {
+    display: inline-block;
+    width: 67px;
+    height: 26px;
+    margin: 0;
+    margin-right: 2px;
+    text-align: center;
+    padding: 6px 0;
+  
+}
+
+.navi li:first-child {
+    width: 90px;
+  }
+  
+  .navi li:nth-child(2) {
+    width: 100px;
+  }
+  
+  .navi li:nth-child(3) {
+     width: 110px;
+  }
+  
+  
+  .navi li img.new {
+    margin-left: 4px;
+  }
+  
+  .navi li img.rocket,
+  .navi li img.fresh {
+    margin-right: 4px;
+  }
+
+
+
+
