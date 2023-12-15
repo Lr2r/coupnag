@@ -1,0 +1,191 @@
+/* CSS 작성 */
+.wrap {
+    margin: 0 auto;
+    width: 1020px;
+  }
+  
+  .header {
+    width: 1020px;
+    height: 124px;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+  }
+  
+  .logo {
+    width: 176px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+  }
+  .logoimg {
+    width: 176px;
+    height: 40px;
+  }
+  
+  .title {
+    width: 366px;
+    height: 28px;
+    position: absolute;
+    top: 100px;
+    font-size: 24px;
+  }
+  
+  .discovery {
+    width: 1036px;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  
+  .headline {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 24px;
+  }
+  
+  .discoverytitle,
+  .subtitle {
+    margin: 0;
+    font-weight: 500;
+  }
+  .discoverytitle {
+    font-size: 24px;
+  }
+  
+  .divider {
+    margin: 0 10px;
+    color: var(—color-gray-600);
+  }
+  .subtitle {
+    font-size: 16px;
+    color: var(--color-gray-600);
+  }
+  
+  .discoverylist {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .discovery .img {
+    box-sizing: border-box;
+  }
+  
+  .product--large {
+    width: 502px;
+    height: 310px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .product {
+    width: 243px;
+    height: 310px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .tea {
+    position: absolute;
+    left: 1px;
+    bottom: 120px;
+    overflow: hidden;
+  }
+  
+  .vaseline {
+    position: absolute;
+    left: 510px;
+    bottom: 120px;
+  }
+  .handcream {
+    position: absolute;
+    top: 320px;
+    left: 1px;
+  }
+  .bibs {
+    position: absolute;
+    top: 320px;
+    left: 259px;
+  }
+  .hanssem {
+    position: absolute;
+    top: 320px;
+    left: 510px;
+  }
+  .dumpling {
+    position: absolute;
+    top: 320px;
+    left: 770px;
+  }
+  .wettissue {
+    position: absolute;
+    top: 640px;
+  }
+  .febreze {
+    position: absolute;
+    top: 640px;
+    left: 510px;
+  }
+  .dyson {
+    position: absolute;
+    top: 640px;
+    left: 770px;
+  }
+  
+  .discoverylist img {
+    object-fit: contain;
+  }
+  
+  .pb {
+    height: 310px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray--500);
+    box-sizing: border-box;
+  }
+  .button {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 45px;
+    background: var(--opacity--20) url(/assets/icon/angle-right-square.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    top: 230px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pb:hover {
+    border: 1px solid var(--blue--600);
+  }
+  
+  .pb:hover .button {
+    width: 112px;
+    padding: 12px 40px 13px 20px;
+    color: var(--white);
+    background-color: var(--blue--600);
+    height: 50px;
+  }
+  .pb:focus .button {
+    width: auto;
+    padding: 12px 40px 13px 20px;
+    color: var(--white);
+    background-color: var(--blue--600);
+  }
+  
+  .pb:hover .button::before,
+  .pb:focus .button::before {
+    content: attr(aria-label);
+  }
+  
