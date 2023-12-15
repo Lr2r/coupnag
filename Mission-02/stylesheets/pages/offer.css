@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul,li{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 오늘의 쇼핑 제안 */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.header{
+    margin: 10rem 0 4.8rem;
+}
+.headerLink {
+    display: block;
+}
+.offerTitle{
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 115%;
+    letter-spacing: 0;
+    font-weight: 500;
+    
+}
+.offerTitle::before {
+  content: '';
+  position: relative;
+  top: 0.5rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url('../../assets/icon/shopping.svg');
+}
+
+.offerList{
+    display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.offerItem{
+    position: relative;
+  width: 20rem;
+  height: 27rem;
+  margin-right: 0.5rem;
+  padding: 1.4rem;
+}
+
+.offerItem:last-child{
+    margin-right: 0;
+}
+
+.offerItemImg{
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto 1.2rem;
+}
+
+.offerItemTitle {
+    margin-bottom: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight: 400;
+
+}
+.discountBadge{
+    position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.3rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-red-500);
+  border-radius: 0 0 0.4rem 0;
+}
+
+.img.deliveryType{
+    display: inline-block;
+  width: 5.5rem;
+  height: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.span.img.deliveryType{
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    color: var(--color-gray-700);
+    font-size: 1.4rem;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.offerItemInfo{
+    display: flex;
+    align-items: center;
+}
+
+.starRating{
+  display: block;
+  width: 4rem;
+  height: 0.8rem;
+  margin-right: 1rem;
+  background-image: url('../../assets/sprites/rating-stars.png');
+}
+
+.starRating.f {
+    background-position-y:70%;
+}
+.starRating.fh{
+    background-position-y:90% ;
+}
+.starRating.full{
+    background-position-y:100% ;
+}
+.offerItemInfo .reviewCount{
+    color: var(--color-gray-700);
+    font-size: 1.4rem;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight: 400;
+
+}
+.offerItemInfo .reviewCount::before{
+    content: '(';
+}
+
+.offerItemInfo .reviewCount::after{
+    content: ')';
+}
